@@ -51,9 +51,10 @@ fake-news-prediction/
 ---
 ## 🚀 Live Demo
 
-**Backend API:** [Open Live Backend]( https://veritas-ai-a8rh.onrender.com)
+* **Frontend Website:** [Open VERITAS AI](veritas-ai-rho.vercel.app)
+* **Backend API:** [Render Backend](https://veritas-ai-a8rh.onrender.com)
+* **Source Code:** [GitHub Repository](https://github.com/puttamrajukarthik569-sys/veritas-ai)
 
-**Frontend:** Coming soon
 
 
 ## Key Features
