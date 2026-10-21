@@ -1,0 +1,178 @@
+{
+  "model_name": "TF-IDF + LinearSVC (Platt Calibrated)",
+  "trained_at": "2026-10-21T17:05:23.511705Z",
+  "dataset_source": "VERITAS Journalistic & Deception Benchmark Corpus",
+  "total_samples": 72,
+  "train_samples": 57,
+  "test_samples": 15,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "confusion_matrix": {
+    "matrix": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "labels": [
+      "Likely Real",
+      "Likely Fake"
+    ],
+    "true_negatives": 8,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 7
+  },
+  "class_metrics": {
+    "likely_real": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 8
+    },
+    "likely_fake": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 7
+    }
+  },
+  "top_features": {
+    "likely_fake_signals": [
+      {
+        "feature": "military",
+        "weight": 0.4389
+      },
+      {
+        "feature": "secret",
+        "weight": 0.2941
+      },
+      {
+        "feature": "high",
+        "weight": 0.2938
+      },
+      {
+        "feature": "documents",
+        "weight": 0.2604
+      },
+      {
+        "feature": "underground",
+        "weight": 0.2396
+      },
+      {
+        "feature": "leaked",
+        "weight": 0.2336
+      },
+      {
+        "feature": "pendant",
+        "weight": 0.2199
+      },
+      {
+        "feature": "revolutionary",
+        "weight": 0.2153
+      },
+      {
+        "feature": "government",
+        "weight": 0.213
+      },
+      {
+        "feature": "whistleblower",
+        "weight": 0.2103
+      },
+      {
+        "feature": "inside",
+        "weight": 0.2075
+      },
+      {
+        "feature": "beneath",
+        "weight": 0.1868
+      },
+      {
+        "feature": "proving",
+        "weight": 0.1814
+      },
+      {
+        "feature": "classified",
+        "weight": 0.1814
+      },
+      {
+        "feature": "politicians",
+        "weight": 0.1808
+      }
+    ],
+    "likely_real_signals": [
+      {
+        "feature": "federal",
+        "weight": 0.3085
+      },
+      {
+        "feature": "released",
+        "weight": 0.2873
+      },
+      {
+        "feature": "agency",
+        "weight": 0.2646
+      },
+      {
+        "feature": "announced",
+        "weight": 0.2551
+      },
+      {
+        "feature": "maritime",
+        "weight": 0.2484
+      },
+      {
+        "feature": "joint",
+        "weight": 0.2477
+      },
+      {
+        "feature": "security",
+        "weight": 0.2391
+      },
+      {
+        "feature": "approved",
+        "weight": 0.2351
+      },
+      {
+        "feature": "infrastructure",
+        "weight": 0.2329
+      },
+      {
+        "feature": "research",
+        "weight": 0.2315
+      },
+      {
+        "feature": "data",
+        "weight": 0.228
+      },
+      {
+        "feature": "scientists",
+        "weight": 0.226
+      },
+      {
+        "feature": "boundaries",
+        "weight": 0.222
+      },
+      {
+        "feature": "international",
+        "weight": 0.2165
+      },
+      {
+        "feature": "manufacturers",
+        "weight": 0.2153
+      }
+    ]
+  },
+  "hyperparameters": {
+    "vectorizer": "TfidfVectorizer(max_features=8000, ngram=(1,2), sublinear_tf=True)",
+    "classifier": "LinearSVC(C=1.0, max_iter=3000)",
+    "calibration": "CalibratedClassifierCV(method='sigmoid', cv=3)"
+  },
+  "limitation_notice": "Model predictions reflect statistical patterns in labeled training data and stylistic vocabulary. They do not constitute real-time fact-checking or absolute truth verification."
+}
