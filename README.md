@@ -49,6 +49,12 @@ fake-news-prediction/
 ```
 
 ---
+## 🚀 Live Demo
+
+**Backend API:** [Open Live Backend]( https://veritas-ai-a8rh.onrender.com)
+
+**Frontend:** Coming soon
+
 
 ## Key Features
 
